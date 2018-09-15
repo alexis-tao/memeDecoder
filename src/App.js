@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
 
     this.state= { 
-      uploadedFileCloudinaryURL: ''
+      newImage: ''
     };
 
     this.onImageDrop = this.onImageDrop.bind(this);
@@ -18,7 +18,9 @@ class App extends Component {
 
   onImageDrop(files){
     this.setState({ 
-      newImage: files[0]
+      newImage: files[0],
+      newImageURL: files[0].preview,
+      isImageUploaded: true,
     });
   }
 
@@ -38,8 +40,13 @@ class App extends Component {
           { !this.state.newImage && 
             <p className="smallText">Click to upload or drag an image here</p>
           }
-          <img className="uploadedImage" src={ this.state.newImage && this.state.newImage.preview && this.state.newImage.preview }/>
+          <img className="uploadedImage" src={ this.state.newImageURL }/>
         </Dropzone>
+        { this.state.isImageUploaded &&
+          <div className='memeMeaning'>
+          <p>here are possible meanings of your meme</p>
+          </div>
+        }
       </div>
     );
   }
