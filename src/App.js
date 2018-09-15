@@ -33,7 +33,11 @@ class App extends Component {
           multiple={false}
           accept="image/*"
           onDrop={this.onImageDrop.bind(this)}
+          className="dropzone"
         >
+          { !this.state.newImage && 
+            <p className="smallText">Click to upload or drag an image here</p>
+          }
           <img className="uploadedImage" src={ this.state.newImage && this.state.newImage.preview && this.state.newImage.preview }/>
         </Dropzone>
       </div>

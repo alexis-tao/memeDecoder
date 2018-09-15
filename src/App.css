@@ -17,8 +17,21 @@
   font-size: 1.5em;
 }
 
-.text {
+.smallText {
+  font-size: 0.8em;
+}
 
+.uploadedImage {
+  max-width: 30em;
+  max-width: 20em;
+}
+
+.dropzone {
+  width: 30em;
+  height: 20em;
+  border: 1px dashed black;
+  border-radius: 10px;
+  padding: 1em;
 }
 
 @keyframes App-logo-spin {
