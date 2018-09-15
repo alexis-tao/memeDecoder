@@ -27,26 +27,11 @@ class App extends Component {
 
   decodeMeme(fileURL){
 
-    const Clarifai = require('clarifai');
-
-    const app = new Clarifai.App({
-      apiKey: '8373f34be05547e8b5dc07f012cd4480'
-    });
-
-    app.models.predict(Clarifai.GENERAL_MODEL, "https://samples.clarifai.com/metro-north.jpg").then(
-      function(response) {
-        console.log(response.outputs[0].data);
-        // do something with response
-      },
-      function(err) {
-        console.log(':(');
-        // there was an error
-      }
-    );
   }
 
 
   render() {
+
     return (
       <div className="app">
         <p className="appTitle">meme decoder</p>
