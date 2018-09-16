@@ -60,9 +60,9 @@ class App extends Component {
           <a className="headerLink" href="https://fsmedia.imgix.net/c7/92/42/c6/34dd/4002/b05c/71637eda680b/qdhl3sgpldcj0jdlsa8fqhdixl6wr1xq--fe1dn59c8jpg.jpeg?auto=format%2Ccompress&w=650">meme of the day</a>
         </div>
         <div className="app">
-          <div className="appTitle">what does it meme?</div>
+          <div className="appTitle">what does it meme ??</div>
           <div className="appDescription">
-            give us a meme, we'll give you meaning of the meme 
+            give us a meme and we'll let you in on the joke
           </div>
           <Dropzone
             multiple={false}
@@ -82,14 +82,14 @@ class App extends Component {
                 <ul className='memeMeaning'>
                   <li>this is known as an <strong>expanding brain meme</strong></li>
                   <li>often used in irony to assoicate situations with intellect (size of the brain)</li>
-                  <li>learn more about <a href="https://knowyourmeme.com/memes/expanding-brain">expanding brain memes</a></li>
+                  <li>learn more about <a className="learnMoreLink" href="https://knowyourmeme.com/memes/expanding-brain">expanding brain memes</a></li>
                 </ul>
               }
               { this.state.newImage.name === "testStarterPack.jpg" &&
                 <ul className='memeMeaning'>
                   <li>this is known as a <strong>starter pack meme</strong></li>
                   <li>often used to illustrate common characteristics of a certain group</li>
-                  <li>learn more about <a href="https://knowyourmeme.com/memes/starter-packs">starter pack memes</a></li>
+                  <li>learn more about <a className="learnMoreLink" href="https://knowyourmeme.com/memes/starter-packs">starter pack memes</a></li>
                 </ul>
               }
             </div>
