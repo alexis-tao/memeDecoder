@@ -7,8 +7,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
+.header {
+  text-align: left;
+}
 .appTitle {
   font-size: 1.5em;
 }
@@ -19,7 +23,11 @@
 
 .uploadedImage {
   max-width: 30em;
-  max-width: 20em;
+  max-height: 20em;
+}
+
+.memeMeaning {
+  text-align: left;
 }
 
 .dropzone {
