@@ -63,6 +63,14 @@
   font-size: 0.8em;
 }
 
+.imageUploadArea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20em;
+}
+
 .uploadedImage {
   max-width: 30em;
   max-height: 20em;

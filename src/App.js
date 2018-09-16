@@ -71,7 +71,9 @@ class App extends Component {
             className="dropzone"
           >
             { !this.state.newImage && 
-              <div className="smallText">+ click to upload or drag an image here</div>
+              <div className="imageUploadArea">
+                <div className="smallText">+ click to upload or drag an image here</div>
+              </div>
             }
             { this.state.newImage && <img alt="upload" className="uploadedImage" src={ this.state.newImageURL }/> }
           </Dropzone>
