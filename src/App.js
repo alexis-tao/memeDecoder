@@ -54,13 +54,13 @@ class App extends Component {
     return (
       <div className="appWrapper">
         <div className="header">
-          <img alt='meme' className="logo" src="meme.png"/>
+          <img alt="meme" className="logo" src="meme.png"/>
           <a className="headerLink" href="https://en.wikipedia.org/wiki/Meme">what is a meme?</a>
           <a className="headerLink" href="https://mashable.com/article/2018-best-memes/#M7q.TUik.Pqd">classic memes</a>
           <a className="headerLink" href="https://fsmedia.imgix.net/c7/92/42/c6/34dd/4002/b05c/71637eda680b/qdhl3sgpldcj0jdlsa8fqhdixl6wr1xq--fe1dn59c8jpg.jpeg?auto=format%2Ccompress&w=650">meme of the day</a>
         </div>
         <div className="app">
-          <div className="appTitle">what does it meme ??</div>
+          <div className="appTitle">what does it meme?</div>
           <div className="appDescription">
             give us a meme and we'll let you in on the joke
           </div>

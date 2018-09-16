@@ -33,22 +33,23 @@
 
 .headerLink {
   text-decoration: none;
-  color: #6481af;
+  color: #000000;
   margin-top: 1em;
   margin-left: 1em;
 }
 
 .headerLink:hover {
-  color: #000000;
+  color: #8ba7b4;
+  font-style: italic;
 }
 
 .learnMoreLink {
-  color: #6481af;
+  color: #8ba7b4;
 }
 
 .appTitle {
   font-size: 1.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.7em;
 }
 
 .appDescription{
